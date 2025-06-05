@@ -8,5 +8,7 @@ Obviously, that's not the case.
 
 The code here is a mix of what I'm seeing in multiple courses and Copilot interactions. 
 
-I really hope that I'm not cutting that many corners and that this doesn't come to bite me in the ass in the future, but for now, I have to choose speed. If case may be, I'll implement those same DSA structures with C and fuckin VIM W/O plugins in the future, whenever I'm the mood for flexing.
+I really hope that I'm not cutting that many corners and that this doesn't come to bite me in the ass in the future, but for now, I have to choose speed. 
+
+If case may be, I'll implement those same DSA structures with C and fuckin VIM W/O plugins in the future, whenever I'm the mood for flexing.
 
