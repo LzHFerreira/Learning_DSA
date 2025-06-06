@@ -1,0 +1,13 @@
+Changes made during refactoring:
+
+1. Modularization:
+   - Created a 'core' folder for core logic.
+   - Created a 'cli' folder for CLI interaction.
+   - Created a 'tests' folder for unit tests.
+
+2. CLI Separation:
+   - Moved CLI logic to 'cli/main.py'.
+   - Created 'run.py' as the entry point to run the CLI.
+
+3. Test Coverage:
+   - Added unit tests in 'tests/test_hotel_message_system.py' to test the HotelMessageSystem class.
