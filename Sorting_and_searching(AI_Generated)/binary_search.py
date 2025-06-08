@@ -1,28 +1,3 @@
-# Binary Search Implementation in Python
-# --------------------------------------
-# Binary Search is an efficient algorithm for finding an item from a sorted list.
-# It works by repeatedly dividing the search interval in half.
-# If the value of the search key is less than the item in the middle of the interval,
-# narrow the interval to the lower half. Otherwise, narrow it to the upper half.
-# Repeatedly check until the value is found or the interval is empty.
-#
-# Time Complexity:
-#   - Worst-case: O(log n) (each step halves the search space)
-#   - Best-case: O(1) (target is at the middle on the first check)
-#   - Average-case: O(log n)
-# Space Complexity: O(1) for iterative version, O(log n) for recursive version (due to call stack)
-#
-# Reasoning:
-#   - Binary search is much faster than linear search for large, sorted datasets.
-#   - It only works on sorted lists or arrays.
-#   - It is widely used in computer science for searching and lookup operations.
-#
-# Example Usage Cases:
-#   - Searching for a value in a sorted list or array
-#   - Looking up entries in a sorted database or index
-#   - Used in libraries and frameworks for fast searching
-
-
 def binary_search(arr, target):
     """
     Searches for the target value in a sorted list using binary search.
