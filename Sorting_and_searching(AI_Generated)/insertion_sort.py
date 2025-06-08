@@ -1,27 +1,3 @@
-# Insertion Sort Implementation in Python
-# --------------------------------------
-# Insertion Sort is a simple, intuitive sorting algorithm.
-# It builds the sorted list one element at a time by repeatedly taking the next
-# unsorted element and inserting it into its correct position among the sorted elements.
-#
-# Time Complexity:
-#   - Worst-case: O(n^2) (when the list is reverse sorted)
-#   - Best-case: O(n) (when the list is already sorted)
-#   - Average-case: O(n^2)
-# Space Complexity: O(1) (in-place sorting)
-#
-# Reasoning:
-#   - Insertion Sort works similarly to how you might sort playing cards in your hand.
-#   - It is efficient for small datasets and nearly sorted lists.
-#   - It is stable (does not change the relative order of equal elements).
-#   - It is adaptive (runs faster on nearly sorted data).
-#
-# Example Usage Cases:
-#   - Small datasets where simplicity is more important than performance
-#   - Nearly sorted lists (adaptive behavior)
-#   - Online sorting (can sort as new elements arrive)
-#   - Useful as part of more complex algorithms (e.g., hybrid sorts like TimSort)
-
 
 def insertion_sort(arr):
     """
