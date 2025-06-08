@@ -1,26 +1,3 @@
-# AVL Tree Implementation in Python
-# ---------------------------------
-# An AVL tree is a self-balancing binary search tree (BST).
-# For every node, the heights of the left and right subtrees differ by at most 1.
-# If an insertion or deletion causes this property to be violated, the tree is rebalanced using rotations.
-#
-# Time Complexity:
-#   - Search:      O(log n)
-#   - Insertion:   O(log n)
-#   - Deletion:    O(log n)
-# Space Complexity: O(n)
-#
-# Reasoning:
-#   - AVL trees maintain balance by tracking the height of each node and performing rotations when needed.
-#   - This ensures that the tree remains balanced, guaranteeing logarithmic time for search, insert, and delete.
-#   - Rotations (left, right, left-right, right-left) are used to restore balance.
-#
-# Example Usage Cases:
-#   - Databases and file systems where fast lookups, inserts, and deletes are required
-#   - Memory management and indexing
-#   - Any application where balanced search trees are needed
-
-
 class AVLNode:
     def __init__(self, key):
         self.key = key  # The value stored in the node
