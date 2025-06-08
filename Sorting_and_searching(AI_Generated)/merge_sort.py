@@ -1,29 +1,3 @@
-# Merge Sort Implementation in Python
-# -----------------------------------
-# Merge Sort is a classic divide-and-conquer sorting algorithm.
-# It divides the list into halves, recursively sorts each half,
-# and then merges the sorted halves to produce the sorted list.
-#
-# Time Complexity:
-#   - Worst-case: O(n log n)
-#   - Best-case: O(n log n)
-#   - Average-case: O(n log n)
-# Space Complexity: O(n) (requires additional space for merging)
-#
-# Reasoning:
-#   - Merge Sort works by breaking the problem into smaller subproblems (divide),
-#     solving each subproblem recursively (conquer), and then combining the results (merge).
-#   - It is stable (does not change the relative order of equal elements).
-#   - It is not in-place (requires extra space for merging).
-#   - It is very efficient for large datasets and is the basis for many library sort functions.
-#
-# Example Usage Cases:
-#   - Sorting large datasets where stability is important
-#   - External sorting (sorting data that does not fit in memory)
-#   - Used as part of hybrid sorting algorithms (e.g., TimSort in Python)
-#   - Sorting linked lists (since merge sort does not require random access)
-
-
 def merge_sort(arr):
     """
     Sorts a list in ascending order using the merge sort algorithm.
