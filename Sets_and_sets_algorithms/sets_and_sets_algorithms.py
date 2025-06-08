@@ -1,26 +1,3 @@
-# Sets and Set Algorithms in Python
-# ---------------------------------
-# A set is an unordered collection of unique elements.
-# Python provides a built-in set type that supports efficient membership tests,
-# union, intersection, difference, and other set operations.
-#
-# Time Complexity (for built-in set operations):
-#   - Membership test (x in s): O(1) average
-#   - Add/remove element: O(1) average
-#   - Union, intersection, difference: O(len(s) + len(t))
-# Space Complexity: O(n), where n is the number of elements in the set
-#
-# Reasoning:
-#   - Sets are implemented using hash tables, allowing for fast membership checks and updates.
-#   - They are useful for removing duplicates, fast lookups, and mathematical set operations.
-#
-# Example Usage Cases:
-#   - Removing duplicates from a list
-#   - Fast membership testing
-#   - Mathematical set operations (union, intersection, difference)
-#   - Finding common or unique elements between collections
-
-
 def set_algorithms_demo():
     """
     Demonstrates basic set algorithms: union, intersection, difference, symmetric difference,
