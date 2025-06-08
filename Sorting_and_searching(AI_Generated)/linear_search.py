@@ -1,25 +1,3 @@
-# Linear Search Implementation in Python
-# --------------------------------------
-# Linear Search (also called Sequential Search) is the simplest searching algorithm.
-# It checks each element of a list one by one until the desired element is found
-# or the list ends.
-#
-# Time Complexity:
-#   - Worst-case: O(n) (must check every element)
-#   - Best-case: O(1) (target is the first element)
-#   - Average-case: O(n)
-# Space Complexity: O(1) (no extra space required)
-#
-# Reasoning:
-#   - Linear search does not require the list to be sorted.
-#   - It is easy to implement and works on any iterable (lists, arrays, etc.).
-#   - It is inefficient for large datasets, but fine for small or unsorted data.
-#
-# Example Usage Cases:
-#   - Searching for a value in a small or unsorted list
-#   - Checking for the presence of an item in a collection
-#   - When data is not sorted and performance is not critical
-
 def linear_search(arr, target):
     """
     Searches for the target value in the list using linear search.
@@ -36,6 +14,7 @@ def linear_search(arr, target):
             return index
     # If the loop completes, the target was not found
     return -1
+
 
 # Example usage:
 if __name__ == "__main__":
