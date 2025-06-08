@@ -1,37 +1,3 @@
-# Heaps and Priority Queues in Python
-# -----------------------------------
-# A heap is a specialized tree-based data structure that satisfies the heap property:
-#   - In a max-heap, for any given node, the value is greater than or equal to its children.
-#   - In a min-heap, for any given node, the value is less than or equal to its children.
-# Heaps are commonly implemented as binary heaps using arrays for efficiency.
-#
-# A priority queue is an abstract data type where each element has a "priority."
-# Elements are served based on priority (highest or lowest), not just insertion order.
-# Heaps are the most efficient way to implement priority queues.
-#
-# Time Complexity:
-#   - Insertion: O(log n)
-#   - Extract-min/extract-max: O(log n)
-#   - Peek (get min/max): O(1)
-#   - Heapify (build heap from list): O(n)
-# Space Complexity: O(n)
-#
-# Reasoning:
-#   - Heaps allow fast access to the highest (max-heap) or lowest (min-heap) priority element.
-#   - The binary heap is a complete binary tree, so it can be efficiently stored in an array.
-#   - The parent/child relationship is easily calculated with indices:
-#       - Parent: (i-1)//2
-#       - Left child: 2*i+1
-#       - Right child: 2*i+2
-#   - Used in algorithms like Dijkstra's, Prim's, and for scheduling tasks.
-#
-# Example Usage Cases:
-#   - Task scheduling (OS, CPU job queues)
-#   - Graph algorithms (Dijkstra's shortest path, Prim's MST)
-#   - Real-time event simulation
-#   - Bandwidth management, load balancing
-#   - Implementing data structures like median heaps
-
 import heapq  # Python's built-in heapq module implements a min-heap
 
 
