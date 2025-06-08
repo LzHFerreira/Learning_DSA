@@ -1,28 +1,3 @@
-# Naive String Search (Brute Force) Implementation in Python
-# ----------------------------------------------------------
-# The naive string search algorithm (also called brute force search)
-# checks for the presence of a pattern (substring) in a text by
-# checking every possible position in the text where the pattern could fit.
-#
-# Time Complexity:
-#   - Worst-case: O((n - m + 1) * m) ≈ O(n * m)
-#     where n = length of text, m = length of pattern
-#   - Best-case: O(n) (if pattern is found at the first position)
-# Space Complexity: O(1) (no extra space required)
-#
-# Reasoning:
-#   - The algorithm slides the pattern over the text one character at a time,
-#     and for each position, checks if the substring matches the pattern.
-#   - It is simple to implement but inefficient for large texts or patterns.
-#   - It does not preprocess the pattern or text, unlike more advanced algorithms
-#     (e.g., KMP, Boyer-Moore).
-#
-# Example Usage Cases:
-#   - Educational purposes (to teach string searching concepts)
-#   - Small texts or patterns where performance is not critical
-#   - Situations where simplicity is more important than speed
-
-
 def naive_search(text, pattern):
     """
     Searches for all occurrences of the pattern in the text using naive search.
