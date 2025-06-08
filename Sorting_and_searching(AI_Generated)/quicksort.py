@@ -1,29 +1,3 @@
-# Quicksort Implementation in Python
-# ----------------------------------
-# Quicksort is a classic divide-and-conquer sorting algorithm.
-# It works by selecting a 'pivot' element from the list and partitioning
-# the other elements into two sublists, according to whether they are less than
-# or greater than the pivot. The sublists are then sorted recursively.
-#
-# Time Complexity:
-#   - Worst-case: O(n^2) (rare, occurs when the smallest or largest element is always chosen as pivot)
-#   - Best-case: O(n log n) (when the pivot divides the list into two equal halves)
-#   - Average-case: O(n log n)
-# Space Complexity: O(log n) for recursive stack (in-place version)
-#
-# Reasoning:
-#   - Quicksort is often faster in practice than other O(n log n) algorithms like merge sort,
-#     due to its in-place sorting and good cache performance.
-#   - The choice of pivot is crucial for performance; random or median-of-three pivots are common.
-#   - It is not stable (equal elements may change relative order).
-#   - It is in-place (does not require extra memory for another list).
-#
-# Example Usage Cases:
-#   - Sorting large datasets in memory where speed is important
-#   - General-purpose sorting in many programming libraries
-#   - Not ideal for datasets where stability is required or for linked lists
-
-
 def quicksort(arr):
     """
     Sorts a list in ascending order using the quicksort algorithm.
