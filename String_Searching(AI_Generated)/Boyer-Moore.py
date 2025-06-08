@@ -1,28 +1,3 @@
-# Boyer-Moore String Search Implementation in Python
-# --------------------------------------------------
-# The Boyer-Moore algorithm is an efficient string searching algorithm.
-# It uses information gathered during the preprocessing of the pattern to skip sections of the text,
-# making it much faster than naive search for most practical cases.
-#
-# Time Complexity:
-#   - Worst-case: O(n * m) (rare, with certain patterns and texts)
-#   - Best/average-case: O(n) (often sublinear in practice)
-#     where n = length of text, m = length of pattern
-# Space Complexity: O(m + k), where k is the size of the alphabet (for the bad character table)
-#
-# Reasoning:
-#   - Boyer-Moore preprocesses the pattern to create "bad character" and "good suffix" tables.
-#   - When a mismatch occurs, it uses these tables to skip ahead in the text, rather than checking every position.
-#   - This makes it very efficient for large texts and patterns.
-#   - It is the basis for many real-world search tools and libraries.
-#
-# Example Usage Cases:
-#   - Searching for a substring in large texts (editors, search engines)
-#   - DNA/protein sequence analysis
-#   - Plagiarism detection
-#   - Any application where fast string matching is required
-
-
 def build_bad_character_table(pattern):
     """
     Builds the bad character table for Boyer-Moore.
