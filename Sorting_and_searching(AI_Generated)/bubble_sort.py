@@ -1,30 +1,3 @@
-# Bubble Sort Implementation in Python
-# ------------------------------------
-# Bubble Sort is a simple comparison-based sorting algorithm.
-# It repeatedly steps through the list, compares adjacent elements,
-# and swaps them if they are in the wrong order.
-# This process is repeated until the list is sorted.
-#
-# Time Complexity:
-#   - Worst-case: O(n^2)
-#   - Best-case: O(n) (when the list is already sorted, with optimization)
-#   - Average-case: O(n^2)
-# Space Complexity: O(1) (in-place sorting)
-#
-# Reasoning:
-#   - Bubble Sort is called so because smaller elements "bubble" to the top
-#     (beginning of the list) with each pass.
-#   - After each outer loop iteration, the largest unsorted element is placed
-#     at its correct position at the end of the list.
-#   - It is easy to implement but inefficient for large datasets.
-#
-# Example Usage Cases:
-#   - Educational purposes (to teach sorting concepts)
-#   - Small datasets where simplicity is more important than performance
-#   - Situations where memory usage must be minimal (in-place sorting)
-#   - Not recommended for large or performance-critical applications
-
-
 def bubble_sort(arr):
     """
     Sorts a list in ascending order using the bubble sort algorithm.
